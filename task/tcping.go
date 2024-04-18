@@ -139,6 +139,9 @@ func (p *Ping) tcpingHandler(ip *net.IPAddr) {
 	}
 	data := &utils.PingData{
 		IP:       ip,
+		PORT: 	  443,
+		TLS:      true,
+		WHERE:	  "WuXi",
 		Sended:   PingTimes,
 		Received: recv,
 		Delay:    totalDlay / time.Duration(recv),
