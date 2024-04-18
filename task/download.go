@@ -17,7 +17,7 @@ import (
 
 const (
 	bufferSize                     = 1024
-	defaultURL                     = "https://cf.xiu2.xyz/url"
+	defaultURL                     = "https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4"
 	defaultTimeout                 = 10 * time.Second
 	defaultDisableDownload         = false
 	defaultTestNum                 = 10
