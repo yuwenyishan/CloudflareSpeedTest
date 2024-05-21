@@ -684,7 +684,7 @@ _**English language version of CloudflareST (Text language differences only) [#6
 为了方便，我是在编译的时候将版本号写入代码中的 version 变量，因此你手动编译时，需要像下面这样在 `go build` 命令后面加上 `-ldflags` 参数来指定版本号：
 
 ```bash
-go build -ldflags "-s -w -X main.version=v2.3.3"
+go build -ldflags "-s -w -X main.version=v2.3.5"
 # 在 CloudflareSpeedTest 目录中通过命令行（例如 CMD、Bat 脚本）运行该命令，即可编译一个可在和当前设备同样系统、位数、架构的环境下运行的二进制程序（Go 会自动检测你的系统位数、架构）且版本号为 v2.3.3
 ```
 
@@ -695,7 +695,7 @@ go build -ldflags "-s -w -X main.version=v2.3.3"
 ```bat
 SET GOOS=linux
 SET GOARCH=amd64
-go build -ldflags "-s -w -X main.version=v2.3.3"
+go build -ldflags "-s -w -X main.version=v2.3.5"
 ```
 
 例如在 Linux 系统下编译一个适用于 **Windows 系统 amd 架构 32 位**的二进制程序：

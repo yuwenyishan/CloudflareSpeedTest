@@ -105,6 +105,10 @@ func (p *Ping) tcping(ip *net.IPAddr) (bool, time.Duration) {
 
 // pingReceived pingTotalTime
 func (p *Ping) checkConnection(ip *net.IPAddr) (recv int, totalDelay time.Duration) {
+	nowAble := len(p.csv)
+	if nowAble > 100 {
+		return
+	}	
 	if Httping {
 		recv, totalDelay = p.httping(ip)
 		return
